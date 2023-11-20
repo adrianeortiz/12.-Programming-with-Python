@@ -7,13 +7,13 @@
  <br />
 
 ```sh
-# Print out elements higher than or equal 10
+# Print out elements higher than or equal to 10
 my_list = [1, 2, 2, 4, 4, 5, 6, 8, 10, 13, 22, 35, 52, 83]
 for number in my_list:
     if number >= 10:
         print(number)
 
-# Make a new list with all elements higher than or equal 10 and print it out
+# Make a new list with all elements higher than or equal to 10 and print it out
 my_list = [1, 2, 2, 4, 4, 5, 6, 8, 10, 13, 22, 35, 52, 83]
 my_new_list = []
 for number in my_list:
@@ -569,7 +569,7 @@ for empl_row in range(2, empl_list.max_row + 1):
 # sort the list of dictionaries by experience
 new_list = sorted(employees_by_experience, key=itemgetter("experience"), reverse=True)
 
-# add entries to the spreadsheet sorted experience
+# add entries to the spreadsheet sorted by experience
 for empl_row in range(2, empl_list.max_row + 1):
     empl_name = empl_list.cell(empl_row, 1)
     empl_experience = empl_list.cell(empl_row, 2)
@@ -599,7 +599,7 @@ _NOTE: there are also other libraries for working with spreadsheets, which enabl
 import requests
 
 # replace with your own user 
-user = "nanuchi"
+user = "techworld-with-nana"
 response = requests.get(f"https://api.github.com/users/{user}/repos")
 my_projects = response.json()
 
